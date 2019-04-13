@@ -7,6 +7,7 @@ from .models import UserProfile, UserInfo
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 
+
 def user_login(request):
     if request.method == "POST":
         login_form = LoginForm(request.POST)

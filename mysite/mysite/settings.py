@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'account',
     'password_reset',
     'article',
+    'image',
+    'sorl.thumbnail',
+    'course',
 ]
 
 MIDDLEWARE = [
@@ -128,7 +131,7 @@ STATICFILES_DIRS = [(
     os.path.join(BASE_DIR, "static")
 )]
 
-LOGIN_REDIRECT_URL = '/blog/'
+LOGIN_REDIRECT_URL = '/home/'
 
 EMAIL_HOST = 'smtp.qq.com'
 EMAIL_HOST_USER = "345195315@qq.com"
@@ -139,3 +142,9 @@ DEFAULT_FROM_EMAIL = "345195315@qq.com"
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
