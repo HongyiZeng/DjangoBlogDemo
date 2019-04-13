@@ -3,7 +3,7 @@
 
 ```
 git clone https://github.com/ownia/DjangoBlogDemo.git
-cd /mysite/mysite
+cd /DjangoBlogDemo/mysite
 python manage.py migrate
 ```
 
